@@ -1,4 +1,100 @@
 ---
-title: "Security and IT approval"
-description: "Best practice for deploying the X-ray simulator using Intune or other MDM systems"
+title: "IT and Security Review"
+description: "A forwardable overview for IT and security teams reviewing X-ray Simulator deployment, authentication, data handling, hardware, and MDM requirements."
 ---
+
+This page is for IT and security teams reviewing X-ray Simulator before institutional approval or deployment.
+
+Use this page to decide whether X-ray Simulator can be approved for deployment at your institution. If the standard setup is enough, follow the inline links below to review requirements, deployment, and data handling. If your institution requires a security questionnaire, data handling document, or formal IT review response, contact [sales@vitasim.dk](mailto:sales@vitasim.dk).
+
+X-ray Simulator is locally installed educational simulation software for radiography and radiologic technology training. Both the Desktop X-ray Simulator and VR X-ray Simulator use online authentication during login with [X-ray Simulator accounts](/Guides/Introduction/accounts-and-login). The VR version also requires compatible Windows PC hardware, a Meta Quest headset, Meta Quest Link, and a USB Link connection.
+
+## Common IT review questions
+
+### Is X-ray Simulator SaaS or browser-based?
+
+No. X-ray Simulator is not a SaaS or browser-based simulator. It is locally installed software.
+
+The Desktop X-ray Simulator is installed on a compatible Windows or macOS computer. The VR X-ray Simulator is installed on a compatible Windows PC and connects to a Meta Quest headset through Meta Quest Link.
+
+### What are the minimum requirements?
+
+For Desktop deployments, review the [Desktop system requirements](/Tech/minimum-requirements-for-running-the-desktop-xray-simulator).
+
+For VR deployments, review the [VR system requirements](/Tech/minimum-requirements-for-running-the-vr-xray-simulator) and [Meta Quest Link requirements](/Tech/vr-hardware-requirements-for-meta-link). VR requires a VR-ready Windows PC, a compatible Meta Quest headset, and a USB Link connection.
+
+### Is it a local install?
+
+Yes. X-ray Simulator is installed locally on the computer that runs the simulation. It uses internet access for authentication during login, but the simulator itself is not delivered through a browser.
+
+### Can it be deployed through MDM?
+
+Yes. The Windows installers support silent deployment for MDM tools such as Intune. Review the [MDM deployment instructions](/Tech/mdm-deployment-instructions) before packaging the installer.
+
+### Can students run it themselves?
+
+Yes, once the software, required hardware, and accounts are set up. Students can launch the simulator and sign in with X-ray Simulator accounts issued through VitaSim.
+
+Accounts and licenses are separate concepts. Licensing is based on the number of students who will use X-ray Simulator, not on the number of VR stations or login accounts. A program may use [individual student accounts or shared station accounts](/Guides/Introduction/accounts-and-login#choosing-an-account-setup), depending on how it wants students to access the simulator.
+
+For VR stations, students may also need to connect the headset through Meta Quest Link before starting the simulator. The [VR Quick Start Guide](/Guides/Introduction/vr-quick-start-guide) describes the normal startup workflow.
+
+### Does it require special ports?
+
+No special inbound ports or local network services are required for a standard setup. The simulator needs internet access for login authentication and related application communication. If your institution needs domain, firewall, or security questionnaire details, request them from [sales@vitasim.dk](mailto:sales@vitasim.dk).
+
+### Do we need a local server?
+
+No. A local server is not required. X-ray Simulator runs on the local workstation or VR PC.
+
+### Does VitaSim hold PID or personal data?
+
+The simulator is designed to avoid storing personally identifiable student data. Institutions commonly use [X-ray Simulator accounts issued by VitaSim](/Guides/Introduction/accounts-and-login#x-ray-simulator-accounts) instead of individual student identity accounts. Review the [Technical and Security FAQ](/Tech/technical-and-security-FAQ) for the current data handling and logging description.
+
+### Does X-ray Simulator process payments?
+
+No. The simulator application does not process payments. Procurement, invoicing, and payment are handled outside the simulator through VitaSim sales and finance workflows.
+
+### Does it store or process healthcare information?
+
+No. X-ray Simulator is educational simulation software and is not used for clinical diagnosis or patient care. It does not require patient health information to operate. Hospitals or clinical institutions that need formal healthcare information or security review responses should contact [sales@vitasim.dk](mailto:sales@vitasim.dk).
+
+## Recommended approval path
+
+1. Confirm whether your institution is approving the Desktop X-ray Simulator, the VR X-ray Simulator, or both.
+2. Review the relevant hardware requirements inline above.
+3. If the software will be deployed to managed Windows devices, review the [MDM deployment instructions](/Tech/mdm-deployment-instructions).
+4. Review data handling and authentication in the [Technical and Security FAQ](/Tech/technical-and-security-FAQ).
+5. Contact [sales@vitasim.dk](mailto:sales@vitasim.dk) if you need formal review documents or questionnaire responses.
+
+## Common review links
+
+<CardGroup cols={1}>
+  <Card title="Technical and Security FAQ" icon="shield-check" href="/Tech/technical-and-security-FAQ">
+    Security, authentication, data handling, hosting, and integration questions.
+  </Card>
+
+  <Card title="MDM deployment instructions" icon="gears" href="/Tech/mdm-deployment-instructions">
+    Silent install and uninstall guidance for managed Windows deployments.
+  </Card>
+
+  <Card title="Desktop system requirements" icon="computer" href="/Tech/minimum-requirements-for-running-the-desktop-xray-simulator">
+    Minimum and recommended requirements for the Desktop X-ray Simulator.
+  </Card>
+
+  <Card title="VR system requirements" icon="vr-cardboard" href="/Tech/minimum-requirements-for-running-the-vr-xray-simulator">
+    Minimum and recommended PC requirements for the VR X-ray Simulator.
+  </Card>
+
+  <Card title="Meta Quest Link requirements" icon="link" href="/Tech/vr-hardware-requirements-for-meta-link">
+    Meta Quest Link hardware compatibility information.
+  </Card>
+
+  <Card title="Accounts and login" icon="user-lock" href="/Guides/Introduction/accounts-and-login">
+    Account types involved in running and supporting X-ray Simulator.
+  </Card>
+</CardGroup>
+
+## Security or deployment questions?
+
+If your institution needs a security questionnaire, formal review document, or an answer not covered by the linked pages, [request review documents from sales](mailto:sales@vitasim.dk).

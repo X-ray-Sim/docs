@@ -28,27 +28,48 @@
         ]
       },
       {
-        "tab": "Support",
+        "tab": "Procurement",
         "anchors": [
           {
-            "anchor": "Support",
-            "icon": "headset",
+            "anchor": "Procurement",
+            "icon": "file-signature",
             "pages": [
-              "/Support/support"
+              "/Procurement/Introduction",
+              "/Procurement/Security and IT approval",
+              "/Procurement/Equipment and purchasing",
+              "/Procurement/Vendor approval"
             ]
           }
         ]
       },
       {
-        "tab": "Download",
+        "tab": "Setup & Accounts",
         "anchors": [
           {
-            "anchor": "Download",
-            "icon": "download",
-            "pages": [
-              "/Download/download",
-              "/Download/changelog",
-              "/Download/upgrade-guide"
+            "anchor": "Setup & Accounts",
+            "icon": "user-lock",
+            "groups": [
+              {
+                "group": "Accounts and Access",
+                "pages": [
+                  "/Guides/Introduction/accounts-and-login",
+                  "/Tech/technical-and-security-FAQ"
+                ]
+              },
+              {
+                "group": "Installers and Updates",
+                "pages": [
+                  "/Download/download",
+                  "/Download/upgrade-guide",
+                  "/Download/changelog"
+                ]
+              },
+              {
+                "group": "Shared Deployment",
+                "pages": [
+                  "/Tech/mdm-deployment-instructions"
+                ]
+              }
             ]
           }
         ]
@@ -60,7 +81,7 @@
             "anchor": "VR X-ray Simulator",
             "groups": [
               {
-                "group": "Guides ",
+                "group": "Using VR",
                 "pages": [
                   "/Guides/Introduction/vr-quick-start-guide",
                   "/Guides/detailed-setup-guide",
@@ -69,23 +90,21 @@
                 ]
               },
               {
-                "group": "Technical Documentation",
+                "group": "VR Setup and Hardware",
                 "pages": [
                   "/Tech/Setup-and-installation-guides/VR-X-ray-Simulator-Setup",
                   "/Tech/minimum-requirements-for-running-the-vr-xray-simulator",
                   "/Tech/how-to-setup-meta-quest-link",
                   "/Tech/vr-hardware-requirements-for-meta-link",
-                  "Guides/purchasing/example-of-portable",
-                  "Guides/purchasing/example-of-stationary",
-                  "/Tech/mdm-deployment-instructions",
-                  "Tech/running-the-x-ray-sim-as-a-kiosk"
+                  "/Guides/purchasing/example-of-portable",
+                  "/Guides/purchasing/example-of-stationary",
+                  "/Tech/running-the-x-ray-sim-as-a-kiosk"
                 ]
               },
               {
-                "group": "Useful Knowledge",
+                "group": "VR Concepts",
                 "pages": [
-                  "Guides/Introduction/understanding-the-programs-involved-VR",
-                  "/Guides/Introduction/accounts-and-login"
+                  "/Guides/Introduction/understanding-the-programs-involved-VR"
                 ]
               }
             ]
@@ -100,19 +119,31 @@
             "icon": "books",
             "pages": [
               {
-                "group": "Technical Documentation",
+                "group": "Desktop Setup and Requirements",
                 "pages": [
                   "/Tech/Setup-and-installation-guides/Desktop-X-ray-Simulator-Setup",
                   "/Tech/minimum-requirements-for-running-the-desktop-xray-simulator"
                 ]
               },
               {
-                "group": "Product and Educator Guides",
+                "group": "Using Desktop",
                 "pages": [
-                  "Guides/Introduction/understanding-the-programs-involved-Desktop",
-                  "Guides/Introduction/getting-started-Desktop-x-ray"
+                  "/Guides/Introduction/getting-started-Desktop-x-ray",
+                  "/Guides/Introduction/understanding-the-programs-involved-Desktop"
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Support",
+        "anchors": [
+          {
+            "anchor": "Support",
+            "icon": "headset",
+            "pages": [
+              "/Support/support"
             ]
           }
         ]

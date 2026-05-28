@@ -25,3 +25,5 @@ Rewrite the FAQ for IT and security reviewers. Clarify data handling, authentica
 Needs product/security confirmation before making strong claims about retention, encryption details, infrastructure, or compliance scope.
 
 ## Comments
+
+- 2026-05-28: Partial terminology cleanup completed as part of the accounts/license clarification work. Replaced "dump users" wording with shared station account language and linked to `Guides/Introduction/accounts-and-login.mdx`. Full security FAQ rewrite and navigation decision remain open.

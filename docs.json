@@ -28,21 +28,6 @@
         ]
       },
       {
-        "tab": "Procurement",
-        "anchors": [
-          {
-            "anchor": "Procurement",
-            "icon": "file-signature",
-            "pages": [
-              "/Procurement/Introduction",
-              "/Procurement/Security and IT approval",
-              "/Procurement/Equipment and purchasing",
-              "/Procurement/Vendor approval"
-            ]
-          }
-        ]
-      },
-      {
         "tab": "Setup & Accounts",
         "anchors": [
           {
@@ -132,6 +117,21 @@
                   "/Guides/Introduction/understanding-the-programs-involved-Desktop"
                 ]
               }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Procurement",
+        "anchors": [
+          {
+            "anchor": "Procurement",
+            "icon": "file-signature",
+            "pages": [
+              "/Procurement/Introduction",
+              "/Procurement/Security and IT approval",
+              "/Procurement/Equipment and purchasing",
+              "/Procurement/Vendor approval"
             ]
           }
         ]

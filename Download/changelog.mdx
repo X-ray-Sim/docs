@@ -1,6 +1,6 @@
 ---
-title: "Changelog"
-description: "Read about the latest software changes"
+title: "Release Notes"
+description: "Read about the latest X-ray Simulator updates"
 hidden: true
 ---
 
@@ -8,57 +8,61 @@ hidden: true
 
 # Version 1.10.0
 
-Download the newest available version of the X-ray Simulator on the [download page](/Download/download)
+Download the newest available version of the X-ray Simulator on the [download page](/Download/download).
 
 ---
 
-## New Tibia and Fibula Module
+## New Tibia and Fibula Simulation
 
-A dedicated Tibia and Fibula module is now available for long-bone positioning practice. It includes AP and lateral projection workflows, new patient assets, projection details, and optimal image references.
+Version 1.10.0 adds a Tibia and Fibula simulation for practicing lower-leg positioning. The simulation includes AP and lateral views, new patient positioning, and example images that students and faculty can use for comparison.
 
-Students can access the module through the region selector.
+Students can find the simulation in the region selector.
 
 ![Tibia and Fibula module](/Assets/version110/tibia-fibula-module-framed.svg)
 
 ![Tibia and Fibula positioning](/Assets/version110/tibia-fibula-positioning-framed.svg)
 
-## Digital X-ray Workflow
+## Digital X-ray Images
 
-Version 1.10.0 adds digital X-ray workflow alongside the existing raw data workflow.
+Version 1.10.0 adds a digital image option. The existing raw image option is still available.
 
-Users can now switch between digital image output and raw data output.
+Students can switch between:
 
-Digital images show EI, target EI, and DI. This gives students a more clinical review workflow and supports faculty discussions about exposure evaluation.
+- **Digital image**: a processed image that is closer to the review experience used with digital radiography systems.
+- **Raw image**: the simulator image before digital processing.
+
+Digital images show exposure index (EI), target exposure index, and deviation index (DI). These values help students and faculty discuss whether the exposure is close to the intended range.
 
 ![Digital X-ray workflow](/Assets/version110/digital-xray-workflow-framed.svg)
 
-## Image Review and Post-processing Tools
+## Image Review Tools
 
-Desktop and VR workflows now include expanded tools for digital image review:
-- Histogram views.
-- Window width and window level controls.
+Desktop and VR now include more tools for reviewing digital images:
 
-Note: Some digital X-ray and post-processing tools may vary by installation depending on release configuration.
+- Histogram views that show how light and dark values are distributed in the image.
+- Window width and window level controls for adjusting how bright and contrasty the image looks.
+
+Note: Some digital image review tools may vary depending on how the simulator is installed.
 
 ![Image review and post-processing tools](/Assets/version110/image-review-tools-framed.svg)
 
 ## Saved Projection Improvements
 
-Saved projections now preserve more of the image and room state, including raw/digital mode, windowing settings, L/R ruler placement, mobile plate holder state, and app version metadata.
+Saved projections now keep more of the setup when they are reopened. This includes whether the image was saved as digital or raw, image display settings, left/right ruler placement, mobile plate holder position, and the simulator version used to save the projection.
 
-This helps saved cases load more consistently across faculty demonstrations and student practice sessions. This release also includes compatibility handling for older shoulder saved projections from version 1.9.0.
+This helps saved cases load more consistently for faculty demonstrations and student practice sessions. Older shoulder saved projections from version 1.9.0 should also open more reliably.
 
 ## Stability and Usability Improvements
 
-Desktop X-ray rendering has been updated to reduce unnecessary image regeneration when the scene is stable. This helps prevent idle image noise, especially at low mAs.
+Desktop X-ray image generation has been updated so the simulator does not keep rebuilding the image when nothing has moved. This helps reduce unwanted image noise, especially at low mAs settings.
 
-Other improvements include keyboard support during login in the VR X-ray Simulator.
+The VR X-ray Simulator also now supports keyboard input during login.
 
 ## VitaSim Launcher Kiosk Mode
 
-Version 1.10.0 adds the VitaSim Launcher for VR training stations configured as Windows kiosk stations. The launcher walks students through Meta Link, headset connection, and Enable Link setup checks before starting the simulator.
+Version 1.10.0 adds the VitaSim Launcher for VR training stations that run in Windows kiosk mode, where the PC is used as a locked training station. The launcher guides students through Meta Link, headset connection, and Enable Link checks before the simulator starts.
 
-For IT and simulation staff, the launcher gives each station a repeatable startup checklist and a controlled maintenance workflow. Staff can check station readiness, open support, restart or shut down the PC, and exit kiosk mode when station management is needed.
+For faculty, simulation staff, and IT staff, the launcher gives each station a repeatable startup checklist. Staff can check station readiness, open support, restart or shut down the PC, and exit kiosk mode when maintenance is needed.
 
 [Read more about running the VR X-ray Simulator as a kiosk](/Tech/running-the-x-ray-sim-as-a-kiosk)
 
@@ -66,9 +70,16 @@ For IT and simulation staff, the launcher gives each station a repeatable startu
 
 ## Room and Scene Updates
 
-This release includes additional room and scene improvements for plate handling, table bucky behavior, mobile plate holder behavior, patient positioning, C-spine and skull bones showing through the clothing, shoulder skin coverage, and collimation display behavior.
+This release also improves several room interactions and visual details:
 
-Directional arrows now visibly show which way movable room controls can be adjusted, making it easier for students to understand the available movement directions before they interact with the controls.
+- Plate handling.
+- Table bucky and mobile plate holder movement.
+- Patient positioning.
+- Cervical spine (C-spine) and skull bone visibility under clothing.
+- Shoulder skin coverage.
+- Collimation display behavior.
+
+Directional arrows now show which way movable room controls can be adjusted. This makes it easier for students to understand how a control moves before they interact with it.
 
 ![Room and scene updates](/Assets/version110/room-scene-updates-framed.svg)
 
@@ -119,7 +130,7 @@ How to use:
 
 
 ## Guiding Laser Toggle for Plate Centering in the Bucky
-To assist with centering the central ray on the hidden plate inside the bucky, we’ve added a guiding laser on the virtual X-ray Tube.
+To assist with centering the central ray on the hidden plate inside the bucky, we've added a guiding laser on the virtual X-ray Tube.
 Instructions:
 - Turn on the laser using the new button located between the collimation dials.
 - Click the button again to turn off the laser.
@@ -130,7 +141,7 @@ Instructions:
 
 ## New Joint Mobilities for Improved Simulation Training
 
-We’ve added new joint mobilities in select simulations to enhance training realism:
+We've added new joint mobilities in select simulations to enhance training realism:
 - The simulated cross-table knee exam now supports adduction and abduction, helping students align femur condyles in lateral images.
 - The axis hip exam features a mobility that allows the raised leg to be pulled out and up, clearing axial images of overlapping thigh muscle mass.
 - The shoulder simulation now enables arm rotation inward and outward, giving students more control for humerus alignment.
@@ -155,7 +166,7 @@ Feedback and support: [support.xraysim.com](https://support.xraysim.com) or supp
 
 <Update label="V.1.8.0" description>
 
-# Version 1.8.0 – Major Update
+# Version 1.8.0 - Major Update
 
 Download the newest version of the X-ray Simulator on the [download page](/Download/download)
 
@@ -186,11 +197,11 @@ If you want to explore all the details of the new regions, you can find them in 
 
 ## Core Improvements
 
-### 🖥️ Desktop X-ray Simulator
+### Desktop X-ray Simulator
 
 - **Redesigned Region Selection**: 
   ```
-  Region → Exam → Simulation
+  Region -> Exam -> Simulation
   ```
   This update simplifies navigation and aligns with the categorization used in most RadTech positioning books.
   ![Updated desktop navigation](/Assets/New_choose_region.jpg)
@@ -217,7 +228,7 @@ If you want to explore all the details of the new regions, you can find them in 
     allowFullScreen />
 ---
 
-## 🥽 VR X-ray Simulator
+## VR X-ray Simulator
 
 - **New Patient Gizmo**:
   A virtual tool has been introduced to grab and reposition the patient.

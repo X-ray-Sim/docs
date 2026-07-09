@@ -88,6 +88,15 @@
                 "pages": [
                   "/Support/support"
                 ]
+              },
+              {
+                "group": "v1.10.0 Release Prep",
+                "hidden": true,
+                "pages": [
+                  "/Download/download",
+                  "/Download/changelog",
+                  "/Simulation-Catalog/v1.10.0/lower-extremity/tibia-fibula"
+                ]
               }
             ]
           },

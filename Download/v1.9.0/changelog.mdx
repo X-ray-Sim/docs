@@ -1,0 +1,163 @@
+---
+title: "Changelog"
+description: "Read about software changes up to V. 1.9.0"
+---
+
+<Update label="V.1.9.0" description>
+
+# Version 1.9.0
+
+Download the newest version of the X-ray Simulator on the [download page](/Download/v1.9.0/download)
+
+---
+
+## Updated Room Layout for Easier Workflow
+
+We have redesigned the room layout and removed the door to improve movement between the examination and control rooms.
+Additionally, the room has been expanded to accommodate the new Detenting and Bucky features introduced in this release.
+
+![New Regions](/Assets/version190/Room_layout.png)
+
+
+## Table and Wall Bucky Support for More Realistic Exams
+
+We are excited to introduce support for table and wall bucky in the X-ray Simulator, enhancing the realism of student exams.
+Key features include:
+- Pull the bucky out using the main handles, and adjust it up/down or side/side with the knob handle.
+- The bucky automatically snaps in and out for ease of use.
+- The plate can only be positioned at the center, but its orientation affects how it sits in the bucky. Use this to align the long axis of the plate when needed.
+
+![New Regions](/Assets/version190/Bucky.png)
+
+
+## X-ray Tube Detenting to Wall Bucky and Radiographic Table
+With the introduction of the bucky feature, we've added the ability to detent the X-ray tube to the center of the wall bucky or radiographic table. This mimics real-life beam alignment challenges.
+How to use:
+- Activate detenting with the new toggle button at the top left.
+- Move the tube into position until you hear a click; detenting is confirmed by a colored light on the tube's front.
+- Click the toggle button again to release the detent.
+
+![New Regions](/Assets/version190/Detenting.png)
+
+
+## Guiding Laser Toggle for Plate Centering in the Bucky
+To assist with centering the central ray on the hidden plate inside the bucky, we've added a guiding laser on the virtual X-ray Tube.
+Instructions:
+- Turn on the laser using the new button located between the collimation dials.
+- Click the button again to turn off the laser.
+- Note: The collimation field and laser are controlled separately.
+
+![New Regions](/Assets/version190/Laser.png)
+
+
+## New Joint Mobilities for Improved Simulation Training
+
+We've added new joint mobilities in select simulations to enhance training realism:
+- The simulated cross-table knee exam now supports adduction and abduction, helping students align femur condyles in lateral images.
+- The axis hip exam features a mobility that allows the raised leg to be pulled out and up, clearing axial images of overlapping thigh muscle mass.
+- The shoulder simulation now enables arm rotation inward and outward, giving students more control for humerus alignment.
+
+New joint mobilities can be adjusted by grabbing the highlighted regions.
+
+![New Regions](/Assets/version190/New_ROM.png)
+
+## New Standing Patient Simulation for Pelvic/Hip Case
+Due to popular demand, a standing hip simulation is now available, reflecting common examination approaches in some countries.
+You can find the new simulation under the existing hip/pelvic case by selecting the "standing" patient option.
+
+![New Regions](/Assets/version190/Standing_hip.png)
+
+
+---
+
+Feedback and support: [support.xraysim.com](https://support.xraysim.com) or support@vitasim.dk
+
+</Update>
+
+
+<Update label="V.1.8.0" description>
+
+# Version 1.8.0 - Major Update
+
+Download the newest version of the X-ray Simulator on the [download page](/Download/v1.8.0/download)
+
+---
+
+## Expanded Simulation Catalog
+
+Five new anatomical regions have been introduced with full positional controls and anatomical models:
+
+![New Regions](/Assets/New_regions.jpg)
+
+The new regions include:
+- **Bony Thorax (+ Sternum)**
+- **Cervical Spine (C-Spine)**
+- **Thoracic Spine (T-Spine)**
+- **Lumbar Spine (L-Spine)**
+- **Skull**
+
+<Card
+  title="Download the Simulation Catalog (pdf)"
+  icon="download"
+  href="https://25168238.fs1.hubspotusercontent-eu1.net/hubfs/25168238/Simulation%20catalog%20v1.8.0.pdf"
+>
+If you want to explore all the details of the new regions, you can find them in the Simulation Catalog (PDF).
+</Card>
+
+---
+
+## Core Improvements
+
+### Desktop X-ray Simulator
+
+- **Redesigned Region Selection**:
+  ```
+  Region -> Exam -> Simulation
+  ```
+  This update simplifies navigation and aligns with the categorization used in most RadTech positioning books.
+  ![Updated desktop navigation](/Assets/New_choose_region.jpg)
+
+- **Control Panel Overhaul**:
+  - Cleaner layout with more intuitive grouping.
+  - The new **View Controls** panel allows you to toggle "collimation mode" via the grid-icon UI.
+  - The Technique panel now shows an **estimate of the collimation cut-off size**.
+  - Tube positioning controls now show an estimate of SID based on tube position and angle.
+  ![New control panel](/Assets/New_controls.jpg)
+
+- **New Functionalities**:
+  - Users can now toggle skin visibility on the patient model.
+  - Users can now adjust bed height via a slider for improved positioning practice.
+
+- **Patient Movement**:
+  - The patient can now be translated either in the horizontal plane (for standing) or the frontal plane (for supine).
+
+<iframe className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/xKvzwNMf4aA"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen />
+---
+
+## VR X-ray Simulator
+
+- **New Patient Gizmo**:
+  A virtual tool has been introduced to grab and reposition the patient.
+  Grab and drag the control gizmo to reposition the patient.
+<iframe className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/sxzYWeHZRDE"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen />
+
+- **UI Enhancements**:
+  - Users can now grab the plate from all sides.
+  - Estimated collimator size and SID are now visible in the tube display.
+  ![Tube data](/Assets/Tube_data.jpg)
+
+---
+
+Feedback and support: [support.xraysim.com](https://support.xraysim.com) or support@vitasim.dk
+
+</Update>

@@ -1,0 +1,61 @@
+---
+title: "Skull Simulation"
+sidebarTitle: "Skull"
+description: "Quick reference for supported skull views, detector setup, movement, bone variations, and current limitations."
+---
+
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
+
+## Quick reference
+
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | Supine PA, lateral, and PA axial skull views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Cranium, upper cervical spine C1-C6, occipital condyles, and cranial bones. |
+| **What setup is used?** | Free-plating or table bucky workflow. |
+| **What movement is included?** | Cranium flexion, extension, and rotation; jaw depression/elevation; and patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Upright or prone skull positioning is not supported. |
+
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/v1.9.0/skull-preview.jpg" alt="Simulator setup preview" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/v1.9.0/skull-exposure.jpg" alt="Example exposure from the simulator" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+
+## Imaging capabilities
+
+| Capability | Details |
+| --- | --- |
+| Radiographic tube | Full range of motion, including vertical, horizontal, tilt, and rotation. The cassette can be rotated, and collimation size is adjustable. |
+| Detector methods | The detector is set up for free plating or table bucky. |
+| Confirmed projections | Confirmed examples include supine PA, lateral, and PA axial views. They do not define the full limit of what can be attempted. Other projections may be possible when the simulated setup supports them. |
+
+## Anatomy and movement
+
+| Area | Details |
+| --- | --- |
+| Included anatomy | Cranium, upper cervical spine C1-C6, occipital condyles, frontal bone, parietal bones, temporal bones, occipital bone, sphenoid bone, and ethmoid bone. |
+| Joint mobility | Cranium flexion, extension, and left/right rotation through the atlanto-occipital and atlantoaxial joints. Jaw depression and elevation through the temporomandibular joint. Patient craniocaudal and mediolateral adjustment. |
+
+## Bone variations
+
+- Healthy bone version
+
+## Known limitations
+
+The skull simulation is limited to supine patient positioning. This restricts projections that require upright or prone positioning. For those workflows, refer to the C-spine simulation.

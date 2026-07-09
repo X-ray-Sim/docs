@@ -1,0 +1,91 @@
+---
+title: "Changelog"
+description: "Read about software changes up to V. 1.8.0"
+---
+
+<Update label="V.1.8.0" description>
+
+# Version 1.8.0 - Major Update
+
+Download the newest version of the X-ray Simulator on the [download page](/Download/v1.8.0/download)
+
+---
+
+## Expanded Simulation Catalog
+
+Five new anatomical regions have been introduced with full positional controls and anatomical models:
+
+![New Regions](/Assets/New_regions.jpg)
+
+The new regions include:
+- **Bony Thorax (+ Sternum)**
+- **Cervical Spine (C-Spine)**
+- **Thoracic Spine (T-Spine)**
+- **Lumbar Spine (L-Spine)**
+- **Skull**
+
+<Card
+  title="Download the Simulation Catalog (pdf)"
+  icon="download"
+  href="https://25168238.fs1.hubspotusercontent-eu1.net/hubfs/25168238/Simulation%20catalog%20v1.8.0.pdf"
+>
+If you want to explore all the details of the new regions, you can find them in the Simulation Catalog (PDF).
+</Card>
+
+---
+
+## Core Improvements
+
+### Desktop X-ray Simulator
+
+- **Redesigned Region Selection**:
+  ```
+  Region -> Exam -> Simulation
+  ```
+  This update simplifies navigation and aligns with the categorization used in most RadTech positioning books.
+  ![Updated desktop navigation](/Assets/New_choose_region.jpg)
+
+- **Control Panel Overhaul**:
+  - Cleaner layout with more intuitive grouping.
+  - The new **View Controls** panel allows you to toggle "collimation mode" via the grid-icon UI.
+  - The Technique panel now shows an **estimate of the collimation cut-off size**.
+  - Tube positioning controls now show an estimate of SID based on tube position and angle.
+  ![New control panel](/Assets/New_controls.jpg)
+
+- **New Functionalities**:
+  - Users can now toggle skin visibility on the patient model.
+  - Users can now adjust bed height via a slider for improved positioning practice.
+
+- **Patient Movement**:
+  - The patient can now be translated either in the horizontal plane (for standing) or the frontal plane (for supine).
+
+<iframe className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/xKvzwNMf4aA"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen />
+---
+
+## VR X-ray Simulator
+
+- **New Patient Gizmo**:
+  A virtual tool has been introduced to grab and reposition the patient.
+  Grab and drag the control gizmo to reposition the patient.
+<iframe className="w-full aspect-video rounded-xl"
+    src="https://www.youtube.com/embed/sxzYWeHZRDE"
+    title="YouTube video player"
+    frameBorder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowFullScreen />
+
+- **UI Enhancements**:
+  - Users can now grab the plate from all sides.
+  - Estimated collimator size and SID are now visible in the tube display.
+  ![Tube data](/Assets/Tube_data.jpg)
+
+---
+
+Feedback and support: [support.xraysim.com](https://support.xraysim.com) or support@vitasim.dk
+
+</Update>

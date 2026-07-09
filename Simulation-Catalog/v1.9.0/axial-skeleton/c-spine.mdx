@@ -1,0 +1,61 @@
+---
+title: "C-spine Simulation"
+sidebarTitle: "C-spine"
+description: "Quick reference for supported cervical spine views, wall bucky setup, movement, bone variations, and current limitations."
+---
+
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
+
+## Quick reference
+
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, AP axial, oblique, and lateral cervical spine projections. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Cranium, cervical spine, thoracic vertebrae, scapulae, clavicles, ribs 1-10, sternum, and upper lumbar spine. |
+| **What setup is used?** | Wall bucky workflow with erect patient positioning. |
+| **What movement is included?** | Head flexion, extension, and rotation; neck bending, tilting, and rotation; jaw opening/closing; and patient axial rotation. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Prone cervical spine positioning is not supported. |
+
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/v1.9.0/c-spine-preview.jpg" alt="Simulator setup preview" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/v1.9.0/c-spine-exposure.jpg" alt="Example exposure from the simulator" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+
+## Imaging capabilities
+
+| Capability | Details |
+| --- | --- |
+| Radiographic tube | Full range of motion, including vertical, horizontal, tilt, and rotation. The cassette can be rotated, and collimation size is adjustable. |
+| Detector methods | The detector setup uses wall bucky. |
+| Confirmed projections | Confirmed examples include AP, AP axial, oblique, and lateral cervical spine projections. They do not define the full limit of what can be attempted. Other projections may be possible when the simulated setup supports them. |
+
+## Anatomy and movement
+
+| Area | Details |
+| --- | --- |
+| Included anatomy | Cranium, cervical spine, thoracic vertebrae, scapulae, clavicles, ribs 1-10 bilateral, sternum, and upper lumbar spine. |
+| Joint mobility | Head flexion, extension, and rotation through the upper cervical joints. Neck bending, tilting, and rotation through the cervical spine. Jaw opening and closing through the temporomandibular joint. Patient axial rotation for in-plane adjustment. |
+
+## Bone variations
+
+- Healthy bone version
+
+## Known limitations
+
+The C-spine simulation is limited to erect patient positioning. This restricts projections that require prone positioning. For those workflows, refer to the skull simulation.

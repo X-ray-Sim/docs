@@ -1,0 +1,64 @@
+---
+title: "Hip and Pelvic Simulation"
+sidebarTitle: "Hip and Pelvic"
+description: "Quick reference for supported hip and pelvic views, detector setup, movement, bone variations, and current limitations."
+---
+
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
+
+## Quick reference
+
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, lateral, and axial hip or pelvic views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Ilium, ischium, pubis, sacrum, coccyx, L3-L5, right femur, and left femur. |
+| **What setup is used?** | Wall bucky, table bucky, and tabletop detector workflows. |
+| **What movement is included?** | Internal and external femur rotation on both legs, plus patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Supine healthy bones, collum femoris fracture, ossis pubis fracture, and standing healthy bones. |
+| **Known limitation** | No known limitations for this simulation as of v1.9.0. |
+
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/v1.9.0/hip-and-pelvic-preview.jpg" alt="Simulator setup preview" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/v1.9.0/hip-and-pelvic-exposure.jpg" alt="Example exposure from the simulator" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+
+## Imaging capabilities
+
+| Capability | Details |
+| --- | --- |
+| Radiographic tube | Full range of motion, including vertical, horizontal, tilt, and rotation. The cassette can be rotated, and collimation size is adjustable. |
+| Detector methods | The tube locks and detents to the wall and table bucky, enabling standard bucky tray operation. The detector can be used with both bucky and tabletop positioning. |
+| Confirmed projections | Confirmed examples include AP, lateral, and axial views. They do not define the full limit of what can be attempted. Other projections may be possible when the simulated setup supports them. |
+
+## Anatomy and movement
+
+| Area | Details |
+| --- | --- |
+| Included anatomy | Ilium, ischium, pubis, sacrum, coccyx, L3, L4, L5, right femur, and left femur. |
+| Joint mobility | Internal and external femur rotation at both hips. Patient craniocaudal and mediolateral adjustment. |
+
+## Bone variations
+
+- Supine with healthy bones
+- Supine with a collum femoris fracture
+- Supine with an ossis pubis fracture
+- Standing with healthy bones
+
+## Known limitations
+
+No known limitations for this simulation as of version v1.9.0.

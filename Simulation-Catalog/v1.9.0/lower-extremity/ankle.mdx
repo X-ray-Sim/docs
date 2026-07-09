@@ -1,0 +1,63 @@
+---
+title: "Ankle Simulation"
+sidebarTitle: "Ankle"
+description: "Quick reference for supported ankle views, free-plating setup, movement, bone variations, and current limitations."
+---
+
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
+
+## Quick reference
+
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, oblique, and lateral ankle views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Tibia, fibula, tarsal bones, metatarsal bones, and phalanges. |
+| **What setup is used?** | Free-plating workflow with the patient supine on the table. |
+| **What movement is included?** | Foot plantarflexion/dorsiflexion, hip internal/external rotation, and patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version, lateral malleolus fracture variation, and medial malleolus fracture variation. |
+| **Known limitation** | Internal ankle rotation is limited, which may affect views that require medial rotation. |
+
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/v1.9.0/ankle-preview.jpg" alt="Simulator setup preview" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/v1.9.0/ankle-exposure.jpg" alt="Example exposure from the simulator" />
+    </Frame>
+  </Tab>
+</Tabs>
+
+
+## Imaging capabilities
+
+| Capability | Details |
+| --- | --- |
+| Radiographic tube | Full range of motion, including vertical, horizontal, tilt, and rotation. The cassette can be rotated, and collimation size is adjustable. |
+| Detector methods | The detector is set up for free plating because the patient is supine on the table. |
+| Confirmed projections | Confirmed examples include AP, oblique, and lateral views. They do not define the full limit of what can be attempted. Other projections may be possible when the simulated setup supports them. |
+
+## Anatomy and movement
+
+| Area | Details |
+| --- | --- |
+| Included anatomy | Tibia, fibula, tarsal bones, metatarsal bones, and phalanges. |
+| Joint mobility | Foot plantarflexion and dorsiflexion. Hip internal and external rotation. Patient craniocaudal and mediolateral adjustment. |
+
+## Bone variations
+
+- Healthy bone version
+- Pathological version featuring a lateral malleolus fracture
+- Pathological version featuring a medial malleolus fracture
+
+## Known limitations
+
+The ankle joint lacks sufficient internal rotation to accurately simulate certain projections. This may affect positioning for views that require medial rotation.

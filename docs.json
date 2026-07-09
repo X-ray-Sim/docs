@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "luma",
   "logo": {
     "light": "/Logo/logo.png",
     "dark": "/Logo/logo-dark.png",
@@ -13,83 +13,132 @@
     "dark": "#bc8337"
   },
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Welcome",
-        "anchors": [
+        "version": "v1.9.0",
+        "default": true,
+        "tag": "Current",
+        "tabs": [
           {
-            "anchor": "Welcome",
-            "icon": "House",
-            "pages": [
-              "welcome",
-              "/Guides/Introduction/understanding-the-X-ray-Simulator"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Setup & Accounts",
-        "anchors": [
-          {
-            "anchor": "Setup & Accounts",
-            "icon": "user-lock",
+            "tab": "Docs",
+            "icon": "book-open",
             "groups": [
               {
-                "group": "Accounts and Access",
+                "group": "Start here",
+                "icon": "House",
+                "expanded": true,
+                "pages": [
+                  "welcome",
+                  "/Guides/Introduction/understanding-the-X-ray-Simulator"
+                ]
+              },
+              {
+                "group": "Setup",
+                "icon": "user-lock",
                 "pages": [
                   "/Guides/Introduction/accounts-and-login",
-                  "/Tech/technical-and-security-FAQ"
-                ]
-              },
-              {
-                "group": "Installers and Updates",
-                "pages": [
-                  "/Download/download",
+                  "/Tech/technical-and-security-FAQ",
+                  "/Download/v1.9.0/download",
                   "/Download/upgrade-guide",
-                  "/Download/changelog"
-                ]
-              },
-              {
-                "group": "Shared Deployment",
-                "pages": [
+                  "/Download/v1.9.0/changelog",
                   "/Tech/mdm-deployment-instructions"
                 ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "VR X-ray Simulator",
-        "anchors": [
-          {
-            "anchor": "VR X-ray Simulator",
-            "groups": [
+              },
               {
-                "group": "Using VR",
+                "group": "Desktop",
+                "icon": "computer",
+                "pages": [
+                  "/Tech/Setup-and-installation-guides/Desktop-X-ray-Simulator-Setup",
+                  "/Tech/minimum-requirements-for-running-the-desktop-xray-simulator",
+                  "/Guides/Introduction/getting-started-Desktop-x-ray",
+                  "/Guides/Introduction/understanding-the-programs-involved-Desktop"
+                ]
+              },
+              {
+                "group": "VR",
+                "icon": "vr-cardboard",
                 "pages": [
                   "/Guides/Introduction/vr-quick-start-guide",
                   "/Guides/detailed-setup-guide",
                   "/Guides/Introduction/vr-navigation-and-interaction",
-                  "/Guides/Printable-guides-and-templates"
-                ]
-              },
-              {
-                "group": "VR Setup and Hardware",
-                "pages": [
                   "/Tech/Setup-and-installation-guides/VR-X-ray-Simulator-Setup",
                   "/Tech/minimum-requirements-for-running-the-vr-xray-simulator",
                   "/Tech/how-to-setup-meta-quest-link",
                   "/Tech/vr-hardware-requirements-for-meta-link",
                   "/Guides/purchasing/example-of-portable",
                   "/Guides/purchasing/example-of-stationary",
-                  "/Tech/running-the-x-ray-sim-as-a-kiosk"
+                  "/Tech/running-the-x-ray-sim-as-a-kiosk",
+                  "/Guides/Introduction/understanding-the-programs-involved-VR",
+                  "/Guides/Printable-guides-and-templates"
                 ]
               },
               {
-                "group": "VR Concepts",
+                "group": "Procurement",
+                "icon": "file-signature",
                 "pages": [
-                  "/Guides/Introduction/understanding-the-programs-involved-VR"
+                  "/Procurement/Introduction",
+                  "/Procurement/Security and IT approval",
+                  "/Procurement/Equipment and purchasing",
+                  "/Procurement/Vendor approval"
+                ]
+              },
+              {
+                "group": "Support",
+                "icon": "headset",
+                "pages": [
+                  "/Support/support"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Simulator Reference",
+            "icon": "list",
+            "groups": [
+              {
+                "group": "Start Here",
+                "expanded": true,
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/overview"
+                ]
+              },
+              {
+                "group": "Global Capabilities",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/capabilities"
+                ]
+              },
+              {
+                "group": "Browse by Region",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/browse-by-region"
+                ]
+              },
+              {
+                "group": "Upper Extremity",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/shoulder",
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/elbow",
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/wrist"
+                ]
+              },
+              {
+                "group": "Lower Extremity",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/hip-and-pelvic",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/knee",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/ankle",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/foot"
+                ]
+              },
+              {
+                "group": "Axial Skeleton",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/bony-ribs",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/skull",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/c-spine",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/l-spine",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/t-spine"
                 ]
               }
             ]
@@ -97,76 +146,46 @@
         ]
       },
       {
-        "tab": "Desktop X-ray Simulator",
-        "anchors": [
+        "version": "v1.8.0",
+        "tag": "Historical",
+        "tabs": [
           {
-            "anchor": "Desktop X-ray Simulator",
-            "icon": "books",
-            "pages": [
+            "tab": "Docs",
+            "icon": "book-open",
+            "groups": [
               {
-                "group": "Desktop Setup and Requirements",
+                "group": "Setup",
+                "icon": "user-lock",
                 "pages": [
-                  "/Tech/Setup-and-installation-guides/Desktop-X-ray-Simulator-Setup",
-                  "/Tech/minimum-requirements-for-running-the-desktop-xray-simulator"
-                ]
-              },
-              {
-                "group": "Using Desktop",
-                "pages": [
-                  "/Guides/Introduction/getting-started-Desktop-x-ray",
-                  "/Guides/Introduction/understanding-the-programs-involved-Desktop"
+                  "/Download/v1.8.0/download",
+                  "/Download/upgrade-guide",
+                  "/Download/v1.8.0/changelog"
                 ]
               }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Procurement",
-        "anchors": [
-          {
-            "anchor": "Procurement",
-            "icon": "file-signature",
-            "pages": [
-              "/Procurement/Introduction",
-              "/Procurement/Security and IT approval",
-              "/Procurement/Equipment and purchasing",
-              "/Procurement/Vendor approval"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Support",
-        "anchors": [
-          {
-            "anchor": "Support",
-            "icon": "headset",
-            "pages": [
-              "/Support/support"
             ]
           }
         ]
       }
     ]
   },
-
+  "interaction": {
+    "drilldown": false
+  },
   "favicon": "Favicon/favicon-96x96.png",
-
-    "navbar": {
-      "links": [
-        {
-          "label": "Give us feedback",
-          "href": "mailto:feedback@vitasim.dk?subject=Feedback%20for%20Vitasim&body=Hi%20Vitasim%20team%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20about..."
-        }
-      ],
-      "primary": {
-        "label": "Visit the Website",
-        "href": "https://www.vitasim.dk/x-ray",
-        "type": "button"
+  "navbar": {
+    "links": [
+      {
+        "label": "Give us feedback",
+        "href": "mailto:feedback@vitasim.dk?subject=Feedback%20for%20Vitasim&body=Hi%20Vitasim%20team%2C%0A%0AI%20wanted%20to%20share%20some%20feedback%20about..."
       }
-    },
-    "styling": {
-      "eyebrows": "breadcrumbs"
+    ],
+    "primary": {
+      "label": "Visit the Website",
+      "href": "https://www.vitasim.dk/x-ray",
+      "type": "button"
     }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
+  }
 }

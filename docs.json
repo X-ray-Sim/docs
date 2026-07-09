@@ -36,12 +36,12 @@
                 "group": "Setup",
                 "icon": "user-lock",
                 "pages": [
-                  "/Guides/Introduction/accounts-and-login",
-                  "/Tech/technical-and-security-FAQ",
                   "/Download/v1.9.0/download",
                   "/Download/upgrade-guide",
                   "/Download/v1.9.0/changelog",
-                  "/Tech/mdm-deployment-instructions"
+                  "/Guides/Introduction/accounts-and-login",
+                  "/Tech/mdm-deployment-instructions",
+                  "/Tech/technical-and-security-FAQ"
                 ]
               },
               {

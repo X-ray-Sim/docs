@@ -15,7 +15,7 @@
   "navigation": {
     "versions": [
       {
-        "version": "v1.9.0",
+        "version": "v1.10.1",
         "default": true,
         "tag": "Current",
         "tabs": [
@@ -36,9 +36,9 @@
                 "group": "Setup",
                 "icon": "user-lock",
                 "pages": [
-                  "/Download/v1.9.0/download",
+                  "/Download/download",
                   "/Download/upgrade-guide",
-                  "/Download/v1.9.0/changelog",
+                  "/Download/changelog",
                   "/Guides/Introduction/accounts-and-login",
                   "/Tech/mdm-deployment-instructions",
                   "/Tech/technical-and-security-FAQ"
@@ -88,14 +88,136 @@
                 "pages": [
                   "/Support/support"
                 ]
+              }
+            ]
+          },
+          {
+            "tab": "Simulator Reference",
+            "icon": "list",
+            "groups": [
+              {
+                "group": "Start Here",
+                "expanded": true,
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/overview"
+                ]
               },
               {
-                "group": "v1.10.0",
-                "hidden": true,
+                "group": "Global Capabilities",
                 "pages": [
-                  "/Download/download",
-                  "/Download/changelog",
-                  "/Simulation-Catalog/v1.10.0/lower-extremity/tibia-fibula"
+                  "/Simulation-Catalog/v1.9.0/capabilities"
+                ]
+              },
+              {
+                "group": "Browse by Region",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/browse-by-region"
+                ]
+              },
+              {
+                "group": "Upper Extremity",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/shoulder",
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/elbow",
+                  "/Simulation-Catalog/v1.9.0/upper-extremity/wrist"
+                ]
+              },
+              {
+                "group": "Lower Extremity",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/hip-and-pelvic",
+                  "/Simulation-Catalog/v1.10.1/lower-extremity/tibia-fibula",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/knee",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/ankle",
+                  "/Simulation-Catalog/v1.9.0/lower-extremity/foot"
+                ]
+              },
+              {
+                "group": "Axial Skeleton",
+                "pages": [
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/bony-ribs",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/skull",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/c-spine",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/l-spine",
+                  "/Simulation-Catalog/v1.9.0/axial-skeleton/t-spine"
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "version": "v1.9.0",
+        "tag": "Historical",
+        "tabs": [
+          {
+            "tab": "Docs",
+            "icon": "book-open",
+            "groups": [
+              {
+                "group": "Start here",
+                "icon": "House",
+                "expanded": true,
+                "pages": [
+                  "/v1.9.0/welcome",
+                  "/Guides/Introduction/v1.9.0/understanding-the-X-ray-Simulator"
+                ]
+              },
+              {
+                "group": "Setup",
+                "icon": "user-lock",
+                "pages": [
+                  "/Download/v1.9.0/download",
+                  "/Download/v1.9.0/upgrade-guide",
+                  "/Download/v1.9.0/changelog",
+                  "/Guides/Introduction/accounts-and-login",
+                  "/Tech/v1.9.0/mdm-deployment-instructions",
+                  "/Tech/technical-and-security-FAQ"
+                ]
+              },
+              {
+                "group": "Desktop",
+                "icon": "computer",
+                "pages": [
+                  "/Tech/Setup-and-installation-guides/v1.9.0/Desktop-X-ray-Simulator-Setup",
+                  "/Tech/minimum-requirements-for-running-the-desktop-xray-simulator",
+                  "/Guides/Introduction/getting-started-Desktop-x-ray",
+                  "/Guides/Introduction/understanding-the-programs-involved-Desktop"
+                ]
+              },
+              {
+                "group": "VR",
+                "icon": "vr-cardboard",
+                "pages": [
+                  "/Guides/Introduction/vr-quick-start-guide",
+                  "/Guides/detailed-setup-guide",
+                  "/Guides/Introduction/vr-navigation-and-interaction",
+                  "/Tech/Setup-and-installation-guides/v1.9.0/VR-X-ray-Simulator-Setup",
+                  "/Tech/minimum-requirements-for-running-the-vr-xray-simulator",
+                  "/Tech/how-to-setup-meta-quest-link",
+                  "/Tech/vr-hardware-requirements-for-meta-link",
+                  "/Guides/purchasing/example-of-portable",
+                  "/Guides/purchasing/example-of-stationary",
+                  "/Tech/running-the-x-ray-sim-as-a-kiosk",
+                  "/Guides/Introduction/understanding-the-programs-involved-VR",
+                  "/Guides/Printable-guides-and-templates"
+                ]
+              },
+              {
+                "group": "Procurement",
+                "icon": "file-signature",
+                "pages": [
+                  "/Procurement/Introduction",
+                  "/Procurement/v1.9.0/Security and IT approval",
+                  "/Procurement/v1.9.0/Equipment and purchasing",
+                  "/Procurement/Vendor approval"
+                ]
+              },
+              {
+                "group": "Support",
+                "icon": "headset",
+                "pages": [
+                  "/Support/support"
                 ]
               }
             ]

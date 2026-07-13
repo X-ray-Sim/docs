@@ -1,67 +1,124 @@
 ---
-title: "MDM deployment instructions (VR and Desktop)"
+title: "MDM deployment installers (VR and Desktop)"
 sidebarTitle: "MDM deployment"
-description: "Best practice for deploying the X-ray simulator using Intune or other MDM systems"
+description: "Best practice for deploying the X-ray Simulator using Intune or other MDM systems"
 ---
 
-## Important Information for IT Departments
+## Important information for IT departments
 
-The Desktop and VR X-Ray Simulator is distributed as a standalone `.exe` installer.\
-To deploy either application silently through your MDM system, please use the command provided below.
+The Windows Desktop and Windows VR X-ray Simulator now include dedicated managed deployment packages for V. 1.10.1.
 
-## Official Silent Install Command
+Use these packages when deploying through Microsoft Intune or another MDM system:
 
-<Note>
-  Change the file name and path to suite the version that your are installing. 
-</Note>
+<CardGroup cols="2">
+  <Card title="Desktop MDM installer (.msi)" icon="download" href="https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/mdm/1.10.1/DesktopX-raySimulator-MDM-1.10.1.msi" cta="Download MSI">
+    Windows Desktop X-ray Simulator V. 1.10.1
+  </Card>
+
+  <Card title="Desktop Intune package (.intunewin)" icon="download" href="https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/mdm/1.10.1/DesktopX-raySimulator-MDM-1.10.1.intunewin" cta="Download Intune package">
+    Windows Desktop X-ray Simulator V. 1.10.1
+  </Card>
+
+  <Card title="VR MDM installer (.msi)" icon="download" href="https://storage.googleapis.com/platform-builds/x-ray-simulator/vr-x-ray-simulator/production/mdm/1.10.1/VRX-raySimulator-MDM-1.10.1.msi" cta="Download MSI">
+    Windows VR X-ray Simulator V. 1.10.1
+  </Card>
+
+  <Card title="VR Intune package (.intunewin)" icon="download" href="https://storage.googleapis.com/platform-builds/x-ray-simulator/vr-x-ray-simulator/production/mdm/1.10.1/VRX-raySimulator-MDM-1.10.1.intunewin" cta="Download Intune package">
+    Windows VR X-ray Simulator V. 1.10.1
+  </Card>
+</CardGroup>
+
+Use the `.intunewin` files for Microsoft Intune Win32 app deployments. Use the `.msi` files when your MDM platform supports MSI deployment directly.
+
+The standard `.exe` installers on the [download page](/Download/download) are still intended for interactive installs on individual machines.
+
+## Official silent install commands
+
+### Desktop X-ray Simulator
 
 ```bash
-"SIGNED_Setup Desktop X-Ray Simulator v1.0.0-rc.2.exe" /verysilent /norestart /suppressmsgboxes /log="C:\Windows\Temp\XRaySimulatorInstall.log"
+msiexec /i "DesktopX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\DesktopXRaySimulator-MDM-1.10.1-install.log"
+```
+
+### VR X-ray Simulator
+
+```bash
+msiexec /i "VRX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\VRXRaySimulator-MDM-1.10.1-install.log"
 ```
 
 
 This ensures:
 
-- **Fully silent installation** (no windows, no user interaction)
-- **No system reboot** after installation
-- **Suppressed message boxes** (avoiding any pop-up warnings)
-- **Logging enabled** for troubleshooting (`C:\Windows\Temp\XRaySimulatorInstall.log`)
+- **Fully silent installation** with no user interaction.
+- **No system reboot** after installation.
+- **Verbose logging** for troubleshooting in `C:\Windows\Temp`.
 
-### Installer Behavior
+### Installer behavior
 
-- Application installs by default to:
-
-  ```bash
-  C:\Program Files\VitaSim\<platform> X-Ray Simulator\
-  ```
-  Platform varies with VR or Desktop version.
-
-- No license entry or additional configuration is required at install time.
-- Installation must be run with **administrative privileges**.
-
-### Silent Uninstallation (Optional)
-
-If a silent uninstall command is required, use:
-<Note>
-  Change the file name depending on what version you are uninstalling, and change the path if you changed the default install location. 
-</Note>
-
+The applications install by default to:
 
 ```bash
-"C:\Program Files\VitaSim\Desktop X-Ray Simulator\unins000.exe" /verysilent /norestart /suppressmsgboxes /log="C:\Windows\Temp\XRaySimulatorUninstall.log"
+C:\Program Files\VitaSim\<platform> X-Ray Simulator\
 ```
 
-### Detection Rule Suggestion
+`<platform>` varies with the Desktop or VR version.
 
-If your MDM solution requires a detection rule to verify successful installation, we recommend checking for the existence of:
+- Installations should run in the device/system context.
+- Installation must be run with **administrative privileges**.
+- No license entry or additional configuration is required at install time.
+
+### Microsoft Intune setup
+
+For Microsoft Intune, upload the matching `.intunewin` file as a Windows app (Win32).
+
+Recommended install commands:
+
+```bash
+msiexec /i "DesktopX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\DesktopXRaySimulator-MDM-1.10.1-install.log"
+```
+
+```bash
+msiexec /i "VRX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\VRXRaySimulator-MDM-1.10.1-install.log"
+```
+
+Recommended app behavior:
+
+- Install behavior: **System**
+- Device restart behavior: **No specific action**
+- Assignment: target the device group used for the relevant lab, classroom, or training station pool.
+
+### Silent uninstallation (optional)
+
+If a silent uninstall command is required, use the MSI uninstall command generated by your MDM platform. If you are uninstalling directly from a local MSI file, use:
+
+```bash
+msiexec /x "DesktopX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\DesktopXRaySimulator-MDM-1.10.1-uninstall.log"
+```
+
+```bash
+msiexec /x "VRX-raySimulator-MDM-1.10.1.msi" /qn /norestart /L*v "C:\Windows\Temp\VRXRaySimulator-MDM-1.10.1-uninstall.log"
+```
+
+### Detection rule suggestions
+
+If your MDM solution requires a detection rule to verify successful installation, use MSI product detection when available.
+
+File-based detection can also check for the relevant application executable.
+
+Desktop:
 
 ```bash
 C:\Program Files\VitaSim\Desktop X-Ray Simulator\Desktop X-Ray Simulator.exe
 ```
 
-Detection can also optionally be based on the presence of the application's uninstall registry entry if preferred.
+VR:
+
+```bash
+C:\Program Files\VitaSim\VR X-Ray Simulator\VR X-Ray Simulator.exe
+```
 
 ## Notes
 
 - Administrative rights are necessary for both installation and uninstallation.
-- If needed, the install log at `C:\Windows\Temp\XRaySimulatorInstall.log` can be reviewed to verify installation success or troubleshoot any issues.
+- If needed, the install logs in `C:\Windows\Temp` can be reviewed to verify installation success or troubleshoot issues.
+- If you are upgrading machines that already have an older `.exe` installation, test the upgrade path on a small device group before broad deployment.

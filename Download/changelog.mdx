@@ -1,12 +1,11 @@
 ---
 title: "Release Notes"
 description: "Read about the latest X-ray Simulator updates"
-hidden: true
 ---
 
-<Update label="V.1.10.0" description>
+<Update label="V.1.10.1" description>
 
-# Version 1.10.0
+# Version 1.10.1
 
 Download the newest available version of the X-ray Simulator on the [download page](/Download/download).
 
@@ -14,7 +13,7 @@ Download the newest available version of the X-ray Simulator on the [download pa
 
 ## New Tibia and Fibula Simulation
 
-Version 1.10.0 adds a Tibia and Fibula simulation for practicing lower-leg positioning. The simulation includes AP and lateral views, new patient positioning, and example images that students and faculty can use for comparison.
+Version 1.10.1 adds a Tibia and Fibula simulation for practicing lower-leg positioning. The simulation includes AP and lateral views, new patient positioning, and example images that students and faculty can use for comparison.
 
 Students can find the simulation in the region selector.
 
@@ -24,7 +23,7 @@ Students can find the simulation in the region selector.
 
 ## Digital X-ray Images
 
-Version 1.10.0 adds a digital image option. The existing raw image option is still available.
+Version 1.10.1 adds a digital image option. The existing raw image option is still available.
 
 Students can switch between:
 
@@ -60,7 +59,7 @@ The VR X-ray Simulator also now supports keyboard input during login.
 
 ## VitaSim Launcher Kiosk Mode
 
-Version 1.10.0 adds the VitaSim Launcher for VR training stations that run in Windows kiosk mode, where the PC is used as a locked training station. The launcher guides students through Meta Link, headset connection, and Enable Link checks before the simulator starts.
+Version 1.10.1 adds the VitaSim Launcher for VR training stations that run in Windows kiosk mode, where the PC is used as a locked training station. The launcher guides students through Meta Link, headset connection, and Enable Link checks before the simulator starts.
 
 For faculty, simulation staff, and IT staff, the launcher gives each station a repeatable startup checklist. Staff can check station readiness, open support, restart or shut down the PC, and exit kiosk mode when maintenance is needed.
 
@@ -84,6 +83,29 @@ Directional arrows now show which way movable room controls can be adjusted. Thi
 ![Room and scene updates](/Assets/version110/room-scene-updates-framed.svg)
 
 ![Movement direction arrows](/Assets/version110/movement-direction-arrows-framed.svg)
+
+## Automatic Updates
+
+Version 1.10.1 adds automatic update support for the X-ray Simulator. This makes it easier for standard installations to move to future releases without manually downloading a new installer each time.
+
+For centrally managed computers, IT teams can still control deployment through the MDM installers listed below.
+
+## Installer Availability
+
+Version 1.10.1 is available as:
+
+- [Windows Desktop X-ray Simulator](https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/VitaSim.XraySim.Desktop-win-Setup.exe)
+- [macOS Desktop X-ray Simulator](https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/Desktop-X-Ray-Simulator-1.10.1.dmg)
+- [Windows VR X-ray Simulator](https://storage.googleapis.com/platform-builds/x-ray-simulator/vr-x-ray-simulator/production/VitaSim.XraySim.VR-win-Setup.exe)
+
+This release also introduces dedicated managed deployment packages for Windows Desktop and Windows VR installations. IT teams can download the new `.msi` installers and Microsoft Intune `.intunewin` packages from the [download page](/Download/download#mdm-deployment-packages), with deployment commands and detection guidance in the [MDM deployment guide](/Tech/mdm-deployment-instructions).
+
+Direct MDM package links:
+
+- [Desktop X-ray Simulator MDM MSI](https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/mdm/1.10.1/DesktopX-raySimulator-MDM-1.10.1.msi)
+- [Desktop X-ray Simulator Intune package](https://storage.googleapis.com/platform-builds/x-ray-simulator/desktop-x-ray-simulator/production/mdm/1.10.1/DesktopX-raySimulator-MDM-1.10.1.intunewin)
+- [VR X-ray Simulator MDM MSI](https://storage.googleapis.com/platform-builds/x-ray-simulator/vr-x-ray-simulator/production/mdm/1.10.1/VRX-raySimulator-MDM-1.10.1.msi)
+- [VR X-ray Simulator Intune package](https://storage.googleapis.com/platform-builds/x-ray-simulator/vr-x-ray-simulator/production/mdm/1.10.1/VRX-raySimulator-MDM-1.10.1.intunewin)
 
 ---
 

@@ -99,47 +99,47 @@
                 "group": "Start Here",
                 "expanded": true,
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/overview"
+                  "/Simulation-Catalog/overview"
                 ]
               },
               {
                 "group": "Global Capabilities",
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/capabilities"
+                  "/Simulation-Catalog/capabilities"
                 ]
               },
               {
                 "group": "Browse by Region",
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/browse-by-region"
+                  "/Simulation-Catalog/browse-by-region"
                 ]
               },
               {
                 "group": "Upper Extremity",
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/upper-extremity/shoulder",
-                  "/Simulation-Catalog/v1.9.0/upper-extremity/elbow",
-                  "/Simulation-Catalog/v1.9.0/upper-extremity/wrist"
+                  "/Simulation-Catalog/upper-extremity/shoulder",
+                  "/Simulation-Catalog/upper-extremity/elbow",
+                  "/Simulation-Catalog/upper-extremity/wrist"
                 ]
               },
               {
                 "group": "Lower Extremity",
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/lower-extremity/hip-and-pelvic",
-                  "/Simulation-Catalog/v1.10.1/lower-extremity/tibia-fibula",
-                  "/Simulation-Catalog/v1.9.0/lower-extremity/knee",
-                  "/Simulation-Catalog/v1.9.0/lower-extremity/ankle",
-                  "/Simulation-Catalog/v1.9.0/lower-extremity/foot"
+                  "/Simulation-Catalog/lower-extremity/hip-and-pelvic",
+                  "/Simulation-Catalog/lower-extremity/tibia-fibula",
+                  "/Simulation-Catalog/lower-extremity/knee",
+                  "/Simulation-Catalog/lower-extremity/ankle",
+                  "/Simulation-Catalog/lower-extremity/foot"
                 ]
               },
               {
                 "group": "Axial Skeleton",
                 "pages": [
-                  "/Simulation-Catalog/v1.9.0/axial-skeleton/bony-ribs",
-                  "/Simulation-Catalog/v1.9.0/axial-skeleton/skull",
-                  "/Simulation-Catalog/v1.9.0/axial-skeleton/c-spine",
-                  "/Simulation-Catalog/v1.9.0/axial-skeleton/l-spine",
-                  "/Simulation-Catalog/v1.9.0/axial-skeleton/t-spine"
+                  "/Simulation-Catalog/axial-skeleton/bony-ribs",
+                  "/Simulation-Catalog/axial-skeleton/skull",
+                  "/Simulation-Catalog/axial-skeleton/c-spine",
+                  "/Simulation-Catalog/axial-skeleton/l-spine",
+                  "/Simulation-Catalog/axial-skeleton/t-spine"
                 ]
               }
             ]

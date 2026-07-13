@@ -4,13 +4,43 @@ sidebarTitle: "Hip and Pelvic"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the hip and pelvic simulation module."
 ---
 
-The hip and pelvic module supports wall bucky, table bucky, and tabletop detector work with supine and standing healthy-bone scenarios.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Hip and pelvic simulator preview](/Assets/simulation-catalog/current/hip-and-pelvic-preview.jpg)
+## Quick reference
 
-![Hip and pelvic example exposure](/Assets/simulation-catalog/current/hip-and-pelvic-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, lateral, and axial hip or pelvis work. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Ilium, ischium, pubis, sacrum, coccyx, L3-L5, right femur, and left femur. |
+| **What setup is used?** | Wall bucky, table bucky, and tabletop detector workflows. |
+| **What movement is included?** | Internal and external femur rotation at both hips, plus patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Supine healthy bones, supine collum femoris fracture, supine ossis pubis fracture, and standing healthy bones. |
+| **Known limitation** | No known limitations are currently listed for this simulation. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/hip-and-pelvic-preview.jpg" alt="Simulator setup preview for Hip and Pelvic positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/hip-and-pelvic-bones.jpg" alt="Hip and Pelvic bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/hip-and-pelvic-exposure.jpg" alt="Example exposure from the Hip and Pelvic simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

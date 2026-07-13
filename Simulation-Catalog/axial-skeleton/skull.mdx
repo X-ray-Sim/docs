@@ -4,13 +4,43 @@ sidebarTitle: "Skull"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the skull simulation module."
 ---
 
-The skull module supports supine skull work with either free plating or table bucky detector setup.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Skull simulator preview](/Assets/simulation-catalog/current/skull-preview.jpg)
+## Quick reference
 
-![Skull example exposure](/Assets/simulation-catalog/current/skull-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | Supine PA, lateral, and PA axial skull views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Cranium, upper cervical spine C1-C6, occipital condyles, frontal bone, parietal bones, temporal bones, occipital bone, sphenoid bone, and ethmoid bone. |
+| **What setup is used?** | Free plating or table bucky workflow with the patient supine. |
+| **What movement is included?** | Cranium flexion, extension, and rotation; jaw depression and elevation; and patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Supine positioning only. Upright or prone skull projections are not supported. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/skull-preview.jpg" alt="Simulator setup preview for Skull positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/skull-bones.jpg" alt="Skull bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/skull-exposure.jpg" alt="Example exposure from the Skull simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

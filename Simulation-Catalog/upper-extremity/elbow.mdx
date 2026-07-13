@@ -4,13 +4,43 @@ sidebarTitle: "Elbow"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the elbow simulation module."
 ---
 
-The elbow module uses a free-plating detector workflow and supports elbow positioning practice with humerus, radius, and ulna anatomy.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Elbow simulator preview](/Assets/simulation-catalog/current/elbow-preview.jpg)
+## Quick reference
 
-![Elbow example exposure](/Assets/simulation-catalog/current/elbow-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | PA, lateral, and oblique elbow views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Humerus, radius, and ulna. |
+| **What setup is used?** | Free-plating workflow. |
+| **What movement is included?** | Shoulder internal and external rotation, elbow flexion and extension, and patient anteroposterior and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version, distal humerus fracture, radial head fracture, and ulnar olecranon fracture. |
+| **Known limitation** | Forearm supination and pronation are not included. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/elbow-preview.jpg" alt="Simulator setup preview for Elbow positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/elbow-bones.jpg" alt="Elbow bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/elbow-exposure.jpg" alt="Example exposure from the Elbow simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

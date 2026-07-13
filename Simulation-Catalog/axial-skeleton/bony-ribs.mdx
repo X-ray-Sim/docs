@@ -4,13 +4,43 @@ sidebarTitle: "Bony Ribs"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the bony ribs simulation module."
 ---
 
-The bony ribs module uses a wall bucky detector workflow and a rib phantom that can be repositioned as needed.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Bony ribs simulator preview](/Assets/simulation-catalog/current/bony-ribs-preview.jpg)
+## Quick reference
 
-![Bony ribs example exposure](/Assets/simulation-catalog/current/bony-ribs-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, PA, AP unilateral, posterior axillary, and anterior axillary rib views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Thoracic vertebrae, scapulae, clavicles, ribs 1-10, sternum, upper lumbar spine, and lower cervical spine. |
+| **What setup is used?** | Wall bucky workflow. |
+| **What movement is included?** | The rib phantom does not feature joint mobility, but it can be picked up and repositioned. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Low trabecular bone detail and no inspiration or expiration simulation. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/bony-ribs-preview.jpg" alt="Simulator setup preview for Bony Ribs positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/bony-ribs-bones.jpg" alt="Bony Ribs bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/bony-ribs-exposure.jpg" alt="Example exposure from the Bony Ribs simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

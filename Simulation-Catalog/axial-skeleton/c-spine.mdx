@@ -4,13 +4,43 @@ sidebarTitle: "C-spine"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the cervical spine simulation module."
 ---
 
-The C-spine module uses wall bucky detector setup with an erect patient position and supports head, neck, jaw, and axial patient movement.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![C-spine simulator preview](/Assets/simulation-catalog/current/c-spine-preview.jpg)
+## Quick reference
 
-![C-spine example exposure](/Assets/simulation-catalog/current/c-spine-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, AP axial, oblique, and lateral cervical spine projections. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Cranium, cervical spine, thoracic vertebrae, scapulae, clavicles, ribs 1-10, sternum, and upper lumbar spine. |
+| **What setup is used?** | Wall bucky workflow with an erect patient position. |
+| **What movement is included?** | Head flexion, extension, and rotation; neck bending, tilting, and rotation; jaw opening and closing; and patient axial rotation. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Erect positioning only. Prone cervical spine projections are not supported. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/c-spine-preview.jpg" alt="Simulator setup preview for C-spine positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/c-spine-bones.jpg" alt="C-spine bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/c-spine-exposure.jpg" alt="Example exposure from the C-spine simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

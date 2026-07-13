@@ -4,13 +4,43 @@ sidebarTitle: "T-spine"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the thoracic spine simulation module."
 ---
 
-The T-spine module uses table bucky detector setup with recumbent positioning and right-side decubitus rotation support.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![T-spine simulator preview](/Assets/simulation-catalog/current/t-spine-preview.jpg)
+## Quick reference
 
-![T-spine example exposure](/Assets/simulation-catalog/current/t-spine-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP and lateral thoracic spine projections. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Thoracic vertebrae, scapulae, ribs 1-10, sternum, lumbar spine, and pelvis. |
+| **What setup is used?** | Table bucky workflow with recumbent positioning. |
+| **What movement is included?** | Patient lateral rotation onto the right side for decubitus positioning, plus patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version. |
+| **Known limitation** | Recumbent positioning only. Prone or erect thoracic spine projections are not supported, and vertebrae have low trabecular bone detail. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/t-spine-preview.jpg" alt="Simulator setup preview for T-spine positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/t-spine-bones.jpg" alt="T-spine bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/t-spine-exposure.jpg" alt="Example exposure from the T-spine simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

@@ -4,13 +4,43 @@ sidebarTitle: "Shoulder"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the shoulder simulation module."
 ---
 
-The shoulder module is configured for wall bucky work and includes shoulder anatomy, adjacent upper thoracic and lower cervical structures, shoulder rotation, and healthy or proximal-humerus-fracture bone variations.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Shoulder simulator preview](/Assets/simulation-catalog/current/shoulder-preview.jpg)
+## Quick reference
 
-![Shoulder example exposure](/Assets/simulation-catalog/current/shoulder-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP abducted, PA tangential, and apical shoulder views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Humerus, scapula, clavicle, partial ribs 1-6, upper thoracic spine, and lower cervical spine. |
+| **What setup is used?** | Wall bucky workflow. |
+| **What movement is included?** | Shoulder internal and external rotation, patient axial rotation, anteroposterior adjustment, and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version and proximal humerus fracture version. |
+| **Known limitation** | Active scapular movement through arm extension or flexion is not included. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/shoulder-preview.jpg" alt="Simulator setup preview for Shoulder positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/shoulder-bones.jpg" alt="Shoulder bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/shoulder-exposure.jpg" alt="Example exposure from the Shoulder simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

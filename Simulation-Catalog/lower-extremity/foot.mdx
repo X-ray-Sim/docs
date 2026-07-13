@@ -4,13 +4,43 @@ sidebarTitle: "Foot"
 description: "Available anatomy, detector setup, simulated views, bone variations, and known limitations for the foot simulation module."
 ---
 
-The foot module uses free plating with the patient recumbent on the table and includes lower-leg, tarsal, metatarsal, and phalangeal anatomy.
+import ProjectionExpectations from "/snippets/simulation-catalog-projection-expectations.mdx";
 
-![Foot simulator preview](/Assets/simulation-catalog/current/foot-preview.jpg)
+## Quick reference
 
-![Foot example exposure](/Assets/simulation-catalog/current/foot-exposure.jpg)
+| Question | What to expect |
+| --- | --- |
+| **Which projections are confirmed?** | AP, oblique, and lateral foot views. |
+| **Can users try other projections?** | **Yes.** These are confirmed examples. Other projections may be possible when the simulated setup supports them. |
+| **What anatomy is included?** | Tibia, fibula, tarsal bones, metatarsal bones, and phalanges. |
+| **What setup is used?** | Free-plating workflow with the patient recumbent on the table. |
+| **What movement is included?** | Foot plantarflexion and dorsiflexion for lateral body position, hip internal and external rotation for lateral body position, and patient craniocaudal and mediolateral adjustment. |
+| **What bone variations exist?** | Healthy bone version and 5th metatarsal avulsion fracture version. |
+| **Known limitation** | No known limitations are currently listed for this simulation. |
 
-> **Notice:** The example exposure demonstrates available anatomy only. It is not intended to represent a specific view, ideal standard, or diagnostic-quality image. Exposure results vary with tube positioning, technical factors, and patient alignment.
+<ProjectionExpectations />
+
+## Visual examples
+
+<Tabs sync={false}>
+  <Tab title="Simulator setup" icon="monitor">
+    <Frame caption="Simulator setup and positioning environment">
+      <img src="/Assets/simulation-catalog/current/foot-preview.jpg" alt="Simulator setup preview for Foot positioning" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Bone model" icon="bone">
+    <Frame caption="Bone model examples from the simulation">
+      <img src="/Assets/simulation-catalog/current/foot-bones.jpg" alt="Foot bone model examples" />
+    </Frame>
+  </Tab>
+
+  <Tab title="Example exposure" icon="image">
+    <Frame caption="Example exposure only: shows included anatomy, not a positioning standard or diagnostic-quality image. Results vary with tube, detector, collimation, patient movement, and alignment.">
+      <img src="/Assets/simulation-catalog/current/foot-exposure.jpg" alt="Example exposure from the Foot simulation" />
+    </Frame>
+  </Tab>
+</Tabs>
 
 ## Imaging capabilities
 

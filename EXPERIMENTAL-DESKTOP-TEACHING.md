@@ -19,6 +19,7 @@ This experiment drafts a faculty-facing path for planning a Desktop X-ray Simula
 - A current-version navigation group marked experimental, plus entry links from Welcome and the Desktop quick start.
 - A visible warning and `noindex: true` on each new page.
 - A worked wrist radiography course sequence, a short preparation guide, and an adaptable student announcement.
+- Explicit installation and login prerequisites for faculty, institution, and student computers, followed by a session 0 for the controls and image saving. The preparation message now introduces that session.
 - Five uses supplied by the user: live error correction (with a flipped-classroom variation), image-making homework, paired practice, exposure/distance comparisons, and creating teaching images for slides.
 - Two proposed extensions: peer feedback followed by revision, and an early/later image comparison to discuss learning.
 
@@ -59,3 +60,9 @@ These notices are a documented approval requirement, not a server-enforced Git b
 - The local preview is running on port 3000. Activities still require rehearsal and educational review before publication; explicit user approval is still pending.
 
 Local review entry: `http://localhost:3000/Guides/Teaching-with-Desktop/activities-and-templates`.
+
+## Local verification — setup prerequisites and session 0, 2026-10-01
+
+- Mintlify build validation and `git diff --check` passed. The 15 distinct local link destinations in the three teaching pages resolve to files.
+- Browser checks confirmed the activity-to-session-0 link, the course guide's prerequisites and session-0 sequence, and its link to the setup checks. Both new preparation anchors exist, `noindex` remains set, and no browser console errors were reported.
+- The existing localhost preview remains running. This verifies the documentation, not a simulator rehearsal; merge/publication approval remains pending.

@@ -22,6 +22,7 @@ The primary reader is a faculty member introducing Desktop to a course. They kno
 - Preparation: try the activity, arrange computers/logins, and tell students what to expect. Put technical setup detail behind an IT handoff link.
 - Activities: use the five applications supplied by the user: live error correction, homework with manual image submission, paired image-making, kVp/mAs/distance exploration, and creating controlled image sequences for teaching slides. Add peer feedback/revision and early/later comparisons as optional extensions. Give each activity concrete actions and an educational purpose without turning every idea into a full lesson plan.
 - Distinguish instructor-only use from student practice so a demonstration or slide preparation does not imply a student installation project.
+- Treat installation, receipt of the intended simulator login, and opening a case on the actual computers as prerequisites. Put a session 0 before student practice: demonstrate the necessary controls in short steps, let every student try, and finish with an independent adjustment and image export. Link this preparation from both the course plan and activity page.
 - Replace repeated planning tables and blank forms with an example and short decisions faculty can keep in their existing course plan.
 - Preserve experimental status and the explicit merge/publication approval requirement. Concise page warnings carry review status; detailed governance stays in AGENTS.md and the experiment note.
 

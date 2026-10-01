@@ -93,7 +93,7 @@
             ]
           },
           {
-            "tab": "Teaching (Experimental)",
+            "tab": "Teaching",
             "icon": "graduation-cap",
             "groups": [
               {
@@ -106,7 +106,6 @@
               {
                 "group": "Desktop",
                 "icon": "computer",
-                "tag": "Experimental",
                 "pages": [
                   "/Guides/Teaching-with-Desktop/plan-your-course-rollout",
                   "/Guides/Teaching-with-Desktop/prepare-faculty-and-students",

@@ -4,14 +4,6 @@ This repository is the Mintlify documentation site for X-ray Simulator support.
 
 Pushed changes are automatically picked up by Mintlify and rendered in production. Treat changes to the default branch as production documentation changes, especially edits to `docs.json`, navigation, shared snippets, and high-traffic pages.
 
-## Experimental Desktop teaching draft: approval required
-
-- Branch `experimental/desktop-course-rollout-do-not-merge` contains an experimental documentation proposal for local review only.
-- Explicit user approval of this experiment is required before merging, cherry-picking into a release/default branch, publishing, or removing its experimental labels. A successful preview or validation is not approval.
-- Preserve the warnings in `Teaching/` and `Guides/Teaching-with-Desktop/`, the experimental tab and navigation labels, and this approval notice until that approval is recorded.
-- Read `EXPERIMENTAL-DESKTOP-TEACHING.md` for scope and review status. Do not treat the proposed educational support material as an approved VitaSim service commitment.
-- The existing rule against agent pushes continues to apply even after content approval.
-
 ## Mintlify
 
 - `docs.json` is the Mintlify site configuration and navigation source.

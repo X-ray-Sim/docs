@@ -55,6 +55,16 @@
                 ]
               },
               {
+                "group": "Teaching with Desktop",
+                "icon": "graduation-cap",
+                "tag": "Experimental",
+                "pages": [
+                  "/Guides/Teaching-with-Desktop/plan-your-course-rollout",
+                  "/Guides/Teaching-with-Desktop/prepare-faculty-and-students",
+                  "/Guides/Teaching-with-Desktop/activities-and-templates"
+                ]
+              },
+              {
                 "group": "VR",
                 "icon": "vr-cardboard",
                 "pages": [

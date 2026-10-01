@@ -16,7 +16,8 @@ This experiment drafts a faculty-facing path for planning a Desktop X-ray Simula
 ## Review scope
 
 - Three pages under `Guides/Teaching-with-Desktop/`: Use the simulator in your course, Get ready for your first class, and Teaching activities.
-- A current-version navigation group marked experimental, plus entry links from Welcome and the Desktop quick start.
+- A current-version top tab, **Teaching (Experimental)**, with a shared overview and a **Desktop** group containing the three guides. The overview states that VR teaching guides and classroom activities are not yet available and links to existing VR usage instructions. It makes no commitment to future VR resources.
+- Entry links from Welcome to the teaching overview and from the Desktop quick start to the Desktop course guide. Existing Desktop page URLs remain unchanged; the teaching group has been removed from the Docs tab. Historical-version navigation remains unchanged.
 - A visible warning and `noindex: true` on each new page.
 - A worked wrist radiography course sequence, a short preparation guide, and an adaptable student announcement.
 - Explicit installation and login prerequisites for faculty, institution, and student computers, followed by a session 0 for the controls and image saving. The preparation message now introduces that session.
@@ -36,7 +37,7 @@ Editorial references: [Cornell on flipped classrooms](https://teaching.cornell.e
 - Review educational content and ownership with the user.
 - Rehearse the selected activities in Desktop and confirm limitations.
 - Confirm that the guidance and support responsibilities match the service VitaSim intends to offer.
-- Review all three pages, the Welcome/quick-start links, and `docs.json` navigation.
+- Review the shared teaching overview, all three Desktop pages, the Welcome/quick-start links, and `docs.json` navigation.
 - Record explicit user approval before preparing any merge or publication. A human performs any push.
 
 These notices are a documented approval requirement, not a server-enforced Git branch protection rule.
@@ -59,10 +60,17 @@ These notices are a documented approval requirement, not a server-enforced Git b
 - The existing broad Mintlify broken-link checker limitation described above remains; it was not rerun. Scoped file and browser checks were used for this revision.
 - The local preview is running on port 3000. Activities still require rehearsal and educational review before publication; explicit user approval is still pending.
 
-Local review entry: `http://localhost:3000/Guides/Teaching-with-Desktop/activities-and-templates`.
+Local review entry: `http://localhost:3000/Teaching/overview`.
 
 ## Local verification — setup prerequisites and session 0, 2026-10-01
 
 - Mintlify build validation and `git diff --check` passed. The 15 distinct local link destinations in the three teaching pages resolve to files.
 - Browser checks confirmed the activity-to-session-0 link, the course guide's prerequisites and session-0 sequence, and its link to the setup checks. Both new preparation anchors exist, `noindex` remains set, and no browser console errors were reported.
 - The existing localhost preview remains running. This verifies the documentation, not a simulator rehearsal; merge/publication approval remains pending.
+
+## Local verification — Teaching tab and product scope, 2026-10-01
+
+- Mintlify build validation and `git diff --check` passed.
+- All four Teaching navigation targets and all five overview links resolve to files. The current Docs tab no longer contains the teaching pages; historical-version navigation is unchanged.
+- The browser showed the new top tab, the Desktop group, the overview's explicit VR resource status, and the overview's `noindex` metadata. Navigation through the top tab and the VR quick-start link was checked. The Welcome card rendered with the updated title and overview URL.
+- The local preview remains running, with the Teaching overview open for review. Experimental labels and the explicit approval requirement remain in place.

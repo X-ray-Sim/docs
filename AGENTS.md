@@ -8,7 +8,7 @@ Pushed changes are automatically picked up by Mintlify and rendered in productio
 
 - Branch `experimental/desktop-course-rollout-do-not-merge` contains an experimental documentation proposal for local review only.
 - Explicit user approval of this experiment is required before merging, cherry-picking into a release/default branch, publishing, or removing its experimental labels. A successful preview or validation is not approval.
-- Preserve the warnings in `Guides/Teaching-with-Desktop/`, the experimental navigation label, and this approval notice until that approval is recorded.
+- Preserve the warnings in `Teaching/` and `Guides/Teaching-with-Desktop/`, the experimental tab and navigation labels, and this approval notice until that approval is recorded.
 - Read `EXPERIMENTAL-DESKTOP-TEACHING.md` for scope and review status. Do not treat the proposed educational support material as an approved VitaSim service commitment.
 - The existing rule against agent pushes continues to apply even after content approval.
 

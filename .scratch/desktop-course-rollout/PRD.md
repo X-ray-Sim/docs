@@ -10,9 +10,9 @@ A faculty customer needs help planning a course or cohort rollout of the Desktop
 
 ## Scope and language
 
-Use **Teaching with Desktop** as the faculty-facing section name. A **course rollout plan** is the institution's working plan for cohort scope, scheduled activities, responsibilities, access, feedback, and review. It is separate from technical software deployment. Keep product facts in existing canonical setup, account, and simulator reference pages.
+Use **Teaching** as the shared faculty-facing top tab, visibly marked **Experimental** during review. A short overview identifies the available resources by product, with the current guides grouped under **Desktop**. State that VR teaching resources are not available yet; link to existing VR usage instructions without presenting them as teaching activities or promising future resources. A **course rollout plan** is the institution's working plan for cohort scope, scheduled activities, responsibilities, access, feedback, and review. It is separate from technical software deployment. Keep product facts in existing canonical setup, account, and simulator reference pages.
 
-Draft three pages and connect them to the current-version navigation, Welcome page, and Desktop quick start. Lead with a worked course example, specific student instructions, and an adaptable student announcement. Do not promise automated grading, LMS integration, reporting, validated learning outcomes, or a new VitaSim service.
+Keep the three Desktop guides at their existing URLs and move their navigation from Docs into the Teaching tab in the current version. Add a short shared overview at `Teaching/overview`, linked from Welcome. Keep the Desktop quick-start link pointing directly to the course guide. Lead the guides with a worked course example, specific student instructions, and an adaptable student announcement. Do not promise automated grading, LMS integration, reporting, validated learning outcomes, or a new VitaSim service.
 
 ## Faculty-first revision
 

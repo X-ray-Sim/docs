@@ -18,13 +18,14 @@ Draft three pages and connect them to the current-version navigation, Welcome pa
 
 The primary reader is a faculty member introducing Desktop to a course. They know teaching and radiography but may be unfamiliar with the simulator. Each section must help them decide, act, interpret a result, or resolve a likely difficulty.
 
-- Main guide: show how the simulator can fit into an existing wrist radiography unit, recommend guided practice as a starting option, and help faculty plan the next class.
+- Main guide: show how demonstration, paired practice, independent work, and feedback can fit into an existing wrist radiography topic. Help faculty plan access, timing, work, and feedback for the first group.
 - Preparation: try the activity, arrange computers/logins, and tell students what to expect. Put technical setup detail behind an IT handoff link.
-- Activities: develop one concrete wrist collimation activity with a case, student task, expected work, and discussion guidance. Expand the library only when additional activities are ready.
+- Activities: use the five applications supplied by the user: live error correction, homework with manual image submission, paired image-making, kVp/mAs/distance exploration, and creating controlled image sequences for teaching slides. Add peer feedback/revision and early/later comparisons as optional extensions. Give each activity concrete actions and an educational purpose without turning every idea into a full lesson plan.
+- Distinguish instructor-only use from student practice so a demonstration or slide preparation does not imply a student installation project.
 - Replace repeated planning tables and blank forms with an example and short decisions faculty can keep in their existing course plan.
 - Preserve experimental status and the explicit merge/publication approval requirement. Concise page warnings carry review status; detailed governance stays in AGENTS.md and the experiment note.
 
-The healthy wrist/PA example is based on the catalog and Desktop control documentation. It has not been run in the simulator. Before publication, VitaSim must verify the exact case/view labels, control behavior, starting setup, and comparison, capture a real wrist image pair, and have a radiography educator review the exercise. Do not ask faculty to compensate for unverified product instructions or present the example as tested.
+The teaching ideas are grounded in the user's practice and the catalog/Desktop control documentation. They have not been run in the simulator during this work. Before publication, VitaSim must verify the exact case/view labels, control behavior, starting setups, and comparisons, capture real example images, and have a radiography educator review the activities. The inverse-square-law calculation is separate from observing an image; no quantitative simulator validation or brightness-based measurement is claimed. Do not ask faculty to compensate for unverified product instructions or present the examples as tested.
 
 ## Completion criteria
 

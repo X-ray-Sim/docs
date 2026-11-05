@@ -42,8 +42,8 @@ The software does **not** store any personal data (PII). Instead, institutions u
 A shared station account is a generic, non-personalized [X-ray Simulator account](/Guides/Introduction/accounts-and-login#choosing-an-account-setup) that a program can use for a shared simulator station. This is common for VR stations where the headset and PC are shared equipment. Shared accounts help institutions avoid storing personally identifiable student data in the simulator and can be reset or reassigned as needed.
 
 ### Does the X-ray Simulator require an internet connection to function?
-The software only requires an internet connection for account authentication upon login.
-Logging happens frequently during sessions, but loss of connection after login will not disturb normal simulator operation.
+An internet connection is required for account authentication at login. The application also communicates with VitaSim's central services for activity logging and saved progress.
+Loss of connection after login will not disturb the running simulation, but online authentication and data transfer require connectivity. See [Central services and saved progress](#central-services-and-saved-progress) when planning network access or non-persistent virtual desktops.
 
 ### What are the hardware requirements for using the X-ray Simulator?
 The X-ray Simulator requires a PC that adhere to the requirements below for optimal performance. 
@@ -88,7 +88,23 @@ No. The X-ray Simulator does not collect, store, or process electronic protected
 
 ### **Is the X-ray Simulator hosted externally or on-premises?**
 
-The X-ray Simulator is a locally installed desktop application. It does require an internet connection to authenticate the X-ray Simulator account upon login, but all other operations are performed offline.
+The simulation runs in the installed Desktop or VR application. VitaSim hosts the central services used for account authentication, activity logging, and saved progress. Institutions do not need to host a VitaSim application server or database.
+
+### Central services and saved progress
+
+The simulator communicates with the VitaSim Portal API at `portal.vitasim.dk`. The data flow below describes the central services:
+
+| Purpose | Information exchanged | Central storage |
+| --- | --- | --- |
+| Account authentication | X-ray Simulator username and password sent through encrypted authentication requests | MySQL database for authentication records |
+| Activity and performance logging | Account activity, usage time, performance metrics such as FPS, and errors | MySQL database for logs |
+| Saved simulation progress | Progress data sent when progress is saved for a later session | Google Cloud Storage in EMEA |
+
+These interactions use the X-ray Simulator account. A generic or shared account does not make the service interaction anonymous: authentication and account activity still take place. The institution's Windows or VDI login is separate and is not used as an integrated simulator identity. See [Institutional login and SSO](/Guides/Introduction/accounts-and-login#institutional-login-and-sso).
+
+Locally exported files are separate from centrally saved simulation progress. For session reset and persistence checks, see the [VDI validation workflow](/Tech/virtual-desktop-deployment#validate-the-teaching-workflow).
+
+For firewall allowlists, detailed data flows, retention periods, or formal hosting and security requirements, request the current review materials from [sales@vitasim.dk](mailto:sales@vitasim.dk). The API hostname above is an architecture reference, not a complete deployment allowlist.
 
 ### **What security measures are in place for the solution?**
 
@@ -146,7 +162,7 @@ The X-ray Simulator is used by:
 
 ### **How does the X-ray Simulator integrate with an institution's existing infrastructure?**
 
-* **Account Authentication**: The X-ray Simulator requires login authentication but does not integrate with external identity management systems.
+* **Account Authentication**: The X-ray Simulator requires its own login and does not integrate with external identity management systems through SAML or Shibboleth. Institutional or VDI sign-in does not replace the [simulator login](/Guides/Introduction/accounts-and-login#institutional-login-and-sso).
 * **Standalone Operation**: The software does not require integration with Learning Management Systems (LMS) or hospital IT networks.
 * **IT Support**: Dedicated support is available for onboarding and technical troubleshooting.
 

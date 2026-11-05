@@ -1,7 +1,7 @@
 ---
 title: "Accounts and Login"
 sidebarTitle: "Accounts"
-description: "Understand the difference between students, licenses, X-ray Simulator accounts, PC logins, admin accounts, and Meta accounts."
+description: "Understand student licensing, simulator accounts, institutional login and SSO, credential management, and Meta accounts."
 ---
 
 Use this page when you need to understand which login is used where, or when a school asks how accounts relate to software licenses.
@@ -56,6 +56,16 @@ Different credentials are involved in a full setup. Keep these separate when ask
 Use the X-ray Simulator account on the simulator login screen after launching the Desktop or VR application.
 
 If you need an additional account, a replacement account, or a different account setup after purchase, contact your CSM or VitaSim support. If you are still planning a purchase and need help deciding license count or account setup, contact [sales@vitasim.dk](mailto:sales@vitasim.dk).
+
+## Institutional login and SSO
+
+X-ray Simulator uses its own username and password login. It does not currently integrate with institutional identity providers through SAML or Shibboleth. Signing in to Windows, a virtual desktop service, or an institutional SSO portal does not automatically sign the student in to X-ray Simulator.
+
+Students open the application and sign in with the X-ray Simulator account assigned to them or to the station. A unique institutional login does not create or select a matching simulator account.
+
+For separate saved progress or activity, assign an individual simulator account to each student. Shared station accounts remain an option, but separate Windows logins do not separate activity recorded under the same simulator account.
+
+For hosted desktops and published applications, see [Desktop X-ray Simulator in VDI](/Tech/virtual-desktop-deployment). For information exchanged with VitaSim during login and use, see [Central services and saved progress](/Tech/technical-and-security-FAQ#central-services-and-saved-progress).
 
 ## PC and admin logins
 

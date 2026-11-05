@@ -1,0 +1,72 @@
+---
+title: "Desktop X-ray Simulator in VDI"
+sidebarTitle: "Virtual desktops"
+description: "Prepare and validate a virtual desktop deployment of Desktop X-ray Simulator, including graphics, installation, student login, and session persistence."
+---
+
+Use this guide to prepare and validate a Windows virtual desktop deployment of Desktop X-ray Simulator. It is intended for IT teams managing virtual desktop infrastructure (VDI), such as VMware Horizon / Omnissa Horizon.
+
+**Students still sign in to X-ray Simulator after connecting to the virtual desktop.** The institution's login controls access to the desktop or published application; a separate VitaSim-issued account controls access to the simulator.
+
+## How deployment works
+
+X-ray Simulator is an installed application. In a VDI deployment, the Desktop application runs on the Windows machine hosting the student's session, with the display and input delivered through the institution's remote access platform.
+
+For VDI, confirm compatibility with VitaSim for the proposed configuration and complete a pilot before a teaching rollout. A successful installation alone does not establish that a particular Horizon version, graphics configuration, or published application setup will run the simulator correctly.
+
+## Licensing and account planning
+
+VDI uses the standard [student-based licensing model](/Guides/Introduction/accounts-and-login#students-licenses-and-accounts): count the students expected to use the simulator during the licensed period. The number of virtual machines or simultaneous sessions does not determine that count.
+
+Arrange simulator accounts before the pilot. Choose [individual student accounts](/Guides/Introduction/accounts-and-login#choosing-an-account-setup) when students need separate saved progress or activity. See [account provisioning](/Guides/Introduction/accounts-and-login#x-ray-simulator-accounts) for requests and support contacts.
+
+## Student sign-in flow
+
+1. The student signs in to the institution's virtual desktop service with their institutional credentials.
+2. They open Desktop X-ray Simulator from the desktop or published application list.
+3. They sign in on the simulator login screen with their assigned X-ray Simulator account.
+
+Institutional SSO does not replace step 3. See [Institutional login and SSO](/Guides/Introduction/accounts-and-login#institutional-login-and-sso) for identity-provider support and credential management.
+
+## Prepare a pilot deployment
+
+### Check the virtual machine and graphics
+
+Use the [Desktop system requirements](/Tech/minimum-requirements-for-running-the-desktop-xray-simulator) as the starting point for the machine running the application. Check the CPU, memory, guest operating system, and graphics capabilities available **inside the student's session**.
+
+X-ray Simulator uses 3D graphics. The physical host having a capable GPU does not by itself establish that each virtual session has the required graphics support. Configure the graphics adapter, drivers, and resource allocation for your platform, then test simulation rendering and interaction remotely.
+
+For Horizon, review Omnissa's [3D renderer options for virtual machine pools](https://docs.omnissa.com/Desktops-and-Applications-in-Horizon-Vmulti/3DRendererOptionsforFullCloneVirtualMachinePools) for the available graphics approaches. Platform graphics support still needs to be tested with X-ray Simulator.
+
+If you intend to publish only the application, identify whether it will run in a dedicated Windows desktop VM or on a shared session host. Include the exact guest OS and session model in the compatibility review with VitaSim.
+
+### Install and publish the application
+
+Use the Windows Desktop MSI from the [MDM deployment instructions](/Tech/mdm-deployment-instructions). That page provides the current installer, silent installation command, installation path, and detection guidance.
+
+No activation code or license configuration is required during installation.
+
+- Install with administrative privileges in the device/system context.
+- For a pooled deployment, prepare and test the base image before publishing it to students.
+- Publish the installed Desktop application using your institution's normal VDI process.
+- Keep student simulator credentials out of the shared base image. Test login and application use from an ordinary student session.
+- Test software updates on the pilot pool before updating the teaching pool.
+
+### Allow access to VitaSim services
+
+The machine running the simulator needs outbound internet access for account authentication and application communication. Check this from inside the hosted student session, including any proxy or firewall restrictions.
+
+Authentication, activity logging, and saved progress use VitaSim's central services. See [Central services and saved progress](/Tech/technical-and-security-FAQ#central-services-and-saved-progress) for the data flow and network review contact. The institution does not need to host a VitaSim license server, application database, or authentication service.
+
+### Validate the teaching workflow
+
+Run the pilot using the same endpoints, connection method, and session policies students will use:
+
+1. Sign in to the VDI service and then to X-ray Simulator using an assigned student account.
+2. Open representative cases, position the equipment, and acquire images. Check visual quality and mouse and keyboard responsiveness.
+3. Run the expected number of simultaneous sessions and check CPU, memory, graphics capacity, and network performance.
+4. If saved progress is part of the course, save and reopen it with the same simulator account after reconnecting and after the virtual desktop is reset or replaced.
+5. Test the handover between two different students. Verify that the second student does not inherit the first student's simulator session or saved credentials.
+6. If students export images or other files, verify where those files are stored and whether they survive a session reset.
+
+Record the simulator version, VDI version, guest OS, graphics configuration, session type, and pilot results. Share these with [support@vitasim.dk](mailto:support@vitasim.dk) when requesting deployment assistance.

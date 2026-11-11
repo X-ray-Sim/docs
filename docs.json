@@ -129,7 +129,8 @@
               {
                 "group": "Global Capabilities",
                 "pages": [
-                  "/Simulation-Catalog/capabilities"
+                  "/Simulation-Catalog/capabilities",
+                  "/Simulation-Catalog/digital-technique-chart"
                 ]
               },
               {

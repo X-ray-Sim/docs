@@ -1,6 +1,6 @@
 # Triage Labels
 
-The skills speak in terms of five canonical triage roles. This file maps those roles to the local Markdown status strings used in this repo's backlog.
+The table interprets historical triage labels in the local documentation backlog. Use the current AIX team workflow for active issues.
 
 | Label in mattpocock/skills | Local Markdown status | Meaning                                  |
 | -------------------------- | --------------------- | ---------------------------------------- |
@@ -10,6 +10,6 @@ The skills speak in terms of five canonical triage roles. This file maps those r
 | `ready-for-human`          | `ready-for-human`     | Requires human implementation            |
 | `wontfix`                  | `wontfix`             | Will not be actioned                     |
 
-When a skill mentions a role, use the corresponding `Status:` value in the Markdown issue file.
+Use the mapping when reading an older Markdown issue.
 
-Priorities are recorded separately as `Priority: P0`, `Priority: P1`, `Priority: P2`, or `Priority: P3`.
+Historical priorities were recorded separately as `Priority: P0`, `Priority: P1`, `Priority: P2`, or `Priority: P3`.
